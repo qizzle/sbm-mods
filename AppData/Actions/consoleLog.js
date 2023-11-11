@@ -14,11 +14,17 @@ module.exports = {
       storeAs: "log",
       name: "Input to log",
     },
+
+    {
+      element: "input",
+      storeAs: "nothing",
+      name: "Autoupdater showcase",
+    },
   ],
 
   async run(values, interaction, client, bridge) {
     const log = bridge.transf(values.log);
-
+    // Add something to showcase autoupdater
     console.log(log);
   },
 };
